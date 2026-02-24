@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WRF Empreendimentos | Imóveis à venda</title>
+  <meta name="description" content="WRF Empreendimentos - Casas, apartamentos e terrenos à venda."/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="imovel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+<header class="hero hero-top">
+  <div class="container"> 
+      <nav class="navbar">
+
+   
+      <div class="nav-left">
+        <img src="/img/logo.png" alt="Logo WRF" class="logo"> 
+        <p class="slogan">Construindo hoje os sonhos de amanhã</p>
+      </div>
+         
+          <!-- <h1>WRF Empreendimentos</h1> -->
+          <!-- <a href="https://wa.me/5599999999999" class="btn">Falar no WhatsApp</a> -->
+    
+
+<ul class="nav-menu">  
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#imoveis">Imóveis</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#lançamentos">Lançamentos</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+<!-- <p class="slogan">Construindo hoje os sonhos de amanhã</p> -->
+        <div  class="hero-content">
+          <h1>Encontre o imóvel dos seus sonhos</h1>
+          <p>Casas, apartamentos e terrenos com as melhores condições do mercado.</p>
+          <!-- <a href="#imoveis" class="btn btn-large">Ver Imóveis</a> -->
+
+
+          <!-- caixa de busca  -->
+          <div class="search-box">
+            <input type="text" placeholder="Buscar por localização, tipo ou preço...">
+            <button>Buscar</button>
+          </div>
+        </div>
+  </div>
+</header>
+
+
+<section class="imovel-page">
+
+  <h1>Casa no Jardim floresta</h1>
+
+  <!-- imagem principal -->
+  <div class="imovel-main">
+    <img id="imgPrincipal" src="img/imovel1/fachada.jpeg" alt="Casa no Jardim floresta">
+  </div>
+
+  <!-- carrossel -->
+  <div class="imovel-thumbs">
+    <img src="img/imovel1/fachada.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/quarto.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/quarto1.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/banheirofrente1.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/cozinha.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/churrasqueira frente.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/cozinha2.jpeg" onclick="trocar(this)">
+    <img src="img/imovel1/banheirofrente2.jpeg" onclick="trocar(this)">
+
+<!-- 🎥 Thumb do vídeo entra AQUI -->
+      <div class="video-thumb">
+        <img src="img/imovel1/fachada.jpeg" alt="Vídeo da Casa">
+        <div class="play-icon">
+        <i class="fa-solid fa-play"></i>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="imovel-info">
+    <h3>R$ 850.000</h3>
+<div class="features">
+  <span><i class="fa-solid fa-bed"></i> 3</span>
+  <span><i class="fa-solid fa-bath"></i> 2</span>
+  <span><i class="fa-solid fa-car"></i> 5</span>
+  <span><i class="fa-solid fa-ruler-combined"></i> 175,92m²</span>
+</div>  
+
+    <p>Casa com 3 quartos, sendo 1 suíte com closet,banheiro social, sala e cozinha conjulgada, área gourmet e 4 vagas de garagem coberta e 1 descoberta. Localizada no Bairro Jardim Floresta, próxima a escolas e comércio.</p>
+    <a href="https://wa.me/5599999999999" class="btn">Tenho Interesse</a>   
+  </div>
+
+</section>
+
+
+<!-- footer -->
+
+    <footer class="footer">
+    <p>WRF Empreendimentos © 2026</p>
+    <p>Telefone: (00) 99999-9999 | Email: contato@wrf.com.br</p>
+    </footer>
+
+<a href="https://wa.me/5599999999999?text=Olá,%20tenho%20interesse%20em%20um%20imóvel" 
+ class="whatsapp-float" target="_blank">
+ <i class="fab fa-whatsapp my-float"></i>
+</a>
+
+<!-- video modal  -->
+
+
+<div id="videoModal" class="video-modal">
+  <div class="video-modal-content">
+    <span class="fechar-modal">&times;</span>
+  <video id="videoPlayer" controls preload="none">
+      <source src="img/imovel1/video1.mp4" type="video/mp4">
+      Seu navegador não suporta a reprodução de vídeo.
+    </video>
+  </div>
+</div>
+
+<script src="galeria.js"></script>
+</body>
+</html>

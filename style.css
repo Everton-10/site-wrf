@@ -10,6 +10,11 @@ body {
   color: #222;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 
 /* logo */
@@ -572,6 +577,167 @@ html {
 }
 
 /*  teste de outline para debug 
-* {
+ * {
   outline: 1px solid red;
 } */
+
+
+/* ===========================
+   RESPONSIVIDADE (MOBILE)
+   =========================== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  .banner-lancamento {
+    padding: 40px 30px;
+  }
+
+  .financiamento-right h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 10px 0 15px;
+    gap: 10px;
+  }
+
+  .nav-left {
+    align-items: center;
+  }
+
+  .hero-top .logo {
+    width: 180px;
+    margin-top: 10px;
+  }
+
+  .slogan {
+    margin-top: -8px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+    padding: 0 10px 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .hero-content p {
+    font-size: 0.95rem;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box input,
+  .search-box button {
+    width: 100%;
+  }
+
+  .lancamento-destaque {
+    padding: 60px 0;
+  }
+
+  .banner-lancamento {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .lancamento-info {
+    max-width: 100%;
+  }
+
+  .financiamento-premium {
+    padding: 70px 20px;
+  }
+
+  .financiamento-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .financiamento-right h2 {
+    font-size: 1.9rem;
+  }
+
+  .subtexto,
+  .beneficios li {
+    font-size: 1rem;
+  }
+
+  .box {
+    padding: 24px 20px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta {
+    margin: 50px 16px;
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-top .logo {
+    width: 150px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav-menu li a {
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 50px 16px;
+  }
+
+  .section h2 {
+    font-size: 1.6rem;
+  }
+
+  .card img {
+    height: 180px;
+  }
+
+  .financiamento-premium {
+    padding: 60px 16px;
+  }
+
+  .cta {
+    margin: 40px 12px;
+  }
+}

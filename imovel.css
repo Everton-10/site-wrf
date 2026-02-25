@@ -136,23 +136,19 @@
   border-radius: 8px;
 }
 
-/* Ícone centralizado */
+/* Ícone centralizado sobre a imagem */
 .play-icon {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  color: white;
-  background: rgba(0, 0, 0, 0.6);
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  
+  inset: 0;                /* ocupa toda a área do thumbnail */
   display: flex;
   align-items: center;
-  justify-content: center;
-  pointer-events: none;
+  justify-content: center; 
+
+  font-size: 40px;
+  color: white;
+  background: rgba(0, 0, 0, 0.0); /* transparente por padrão */
+  border-radius: 8px;
+  pointer-events: none;    /* clique passa para o .video-thumb */
 }
 /* icone interno */
 .play-icon i {
@@ -161,8 +157,7 @@
 }
 
 .video-thumb:hover .play-icon {
-  background: rgba(0, 0, 0, 0.8);
-  transform: translate(-50%, -50%) scale(1.1);
+  background: rgba(0, 0, 0, 0.4);
   transition: 0.3s;
 }
 

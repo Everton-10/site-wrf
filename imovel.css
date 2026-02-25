@@ -15,6 +15,7 @@
   display: flex;
   gap: 12px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .imovel-thumbs img {
@@ -171,4 +172,65 @@
   width: 120px;
   height: 80px;
   object-fit: cover;
+}
+
+/* ===========================
+   RESPONSIVIDADE PÁGINAS IMÓVEL
+   =========================== */
+
+@media (max-width: 768px) {
+  .imovel-page {
+    margin: 30px auto;
+    padding: 0 16px;
+  }
+
+  .imovel-page h1 {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+
+  .imovel-main img {
+    max-height: 420px;
+  }
+
+  .imovel-thumbs {
+    justify-content: center;
+  }
+
+  .imovel-thumbs img,
+  .video-thumb {
+    width: 30%;
+    height: 80px;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .video-modal-content {
+    width: 90%;
+  }
+
+  .video-modal video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .imovel-page {
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+
+  .imovel-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .imovel-thumbs img,
+  .video-thumb {
+    width: 45%;
+    height: 70px;
+  }
 }
